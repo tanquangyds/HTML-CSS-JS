@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Haiquynh.net</title>
+        <meta charset="utf-8">
+        <style>
+            .box {
+                height: 100px;
+                width: 100%;
+                background-color: hotpink;
+            }
+            .box::before {
+                content: "";
+                display: block;
+                height: 50px;
+                width: 50px;
+                background-color: brown;
+            }
+            .box::after {
+                content: "";
+                display: block;
+                height: 50px;
+                width: 50px;
+                background-color: green;
+            }
+            h1::selection {
+                background-color: steelblue;
+                color: tomato;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="box"></div>
+        <h1>CSS pseudo-elements <br/>Đây là dòng thứ 2</h1>
+        <ul>
+            <li>::before</li>
+            <li>::after</li>
+            <li>::first-letter</li>
+            <li>::first-line</li>
+            <li>::selection</li>
+        </ul>
+    </body>
+</html>
