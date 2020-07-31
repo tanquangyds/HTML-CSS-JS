@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Haiquynh.net</title>
+        <meta charset="utf-8">
+        <style>
+            .box {
+                width: 200px;
+                height: 200px;
+                background-color: rgb(200, 250, 0);
+            }
+            a::after {
+                content: " ("attr(href)")";
+            }
+            .box::after {
+                content: attr(title);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box" title="Đây là box"></div>
+        <a href="https://haiquynh.net">Hàng Nhật Nội Địa</a>
+    </body>
+
+</html>
