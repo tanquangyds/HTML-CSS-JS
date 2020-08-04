@@ -17,15 +17,72 @@
             <div class="grid">
                 <nav class="header__navbar">
                     <ul class="header__navbar-list">
-                        <li class="header__navbar-item header__navbar-item--separate">Vào cửa hàng trên ứng dụng</li>
-                        <li class="header__navbar-item">Kết nối</li>
-                    </ul>
-                    <ul class="header__navbar-list">
-                        <li class="header__navbar-item">
-                            <a href="" class="header__navbar-item-link">Thông báo</a>
+                        <li class="header__navbar-item header__navbar-item--QR header__navbar-item--separate">
+                            Vào cửa hàng trên ứng dụng  
+                            <!--QR code-->
+                            <div class="header__QA-code">
+                                <img src="/practice/assets/img/QR_code.png" alt="QA code" class="header__QA-code-img">
+                                <div class="header__apps-downloads">
+                                    <a href="" class="header__QA-link"><img src="/practice/assets/img/ggplay.png" alt="Google Play" class="header__apps-downloads-img"></a>
+                                    <a href="" class="header__QA-link"><img src="/practice/assets/img/appstore.png" alt="App Stores" class="header__apps-downloads-img"></a>                                    
+                                </div>
+                            </div>
                         </li>
                         <li class="header__navbar-item">
-                            <a href="" class="header__navbar-item-link">Trợ giúp</a>
+                            <span class="header__navbar-tittle--no-pointer">Kết nối</span> 
+                            <a href="" class="header__navbar-icon-link"><i class="header__navbar-icon fab fa-facebook"></i></a>
+                            <a href="" class="header__navbar-icon-link"><i class="header__navbar-icon fab fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--notify">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon fas fa-bell"></i>
+                                Thông báo
+                            </a>
+                            <!--Header notification-->
+                            <div class="header__notify">
+                                    <header class="header__notify-header">
+                                        <h3>Thông báo mới nhận</h3>
+                                    </header>
+                                    <ul class="header__notify-list">
+                                        <li class="header__notify-items header__notify-items--viewed">
+                                            <a href="" class="header__notify-link">
+                                                <img src="https://img.abaha.vn/photos/resized/200x120/83-1595936336-myphamohui-lgvina.png" alt="" class="header__notify-img">
+                                                <div class="header__notify-info">
+                                                    <span class="header__notify-name">Tặng ngay combo 5 gói mặt nạ thải độc Su:m37</span>
+                                                    <span class="header__notify-description">Khuyến mại siêu hot</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="header__notify-items header__notify-items--viewed">
+                                            <a href="" class="header__notify-link">
+                                                <img src="https://img.abaha.vn/photos/resized/200x120/83-1595936336-myphamohui-lgvina.png" alt="" class="header__notify-img">
+                                                <div class="header__notify-info">
+                                                    <span class="header__notify-name">Day Shield Perfect Sun - Cho nàng thơ tự tin "tỏa nắng"</span>
+                                                    <span class="header__notify-description">Mô tả cho sản phẩm, text này mục đích viết cho dài để kiểm trả lỗi</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="header__notify-items">
+                                            <a href="" class="header__notify-link">
+                                                <img src="https://img.abaha.vn/photos/resized/200x120/83-1595936336-myphamohui-lgvina.png" alt="" class="header__notify-img">
+                                                <div class="header__notify-info">
+                                                    <span class="header__notify-name">CHĂM SÓC KHÔNG QUÊN CHỐNG NẮNG</span>
+                                                    <span class="header__notify-description">Mô tả cho sản phẩm, text này mục đích viết cho dài để kiểm trả lỗi</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="header__notify-footed">
+                                        <a href="" class="header__notify-footed-btn">Xem tất cả</a>
+                                    </div>
+                            </div>                            
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon fas fa-question-circle"></i>
+                                Trợ giúp</a>
                         </li>
                         <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">Đăng ký</li>
                         <li class="header__navbar-item header__navbar-item--strong">Đăng nhập</li>
@@ -35,6 +92,58 @@
         </header>
 
         <div class="container">
+
+        </div>
+
+        <div class="modal">
+            <div class="modal__overlay"></div>
+            <div class="modal__body">
+                    <!-- Authen form -->
+                    <div class="auth-form">
+                        <div class="auth-form__container">
+                            <div class="auth-form__header">
+                                <h3 class="auth-form__heading">Đăng ký</h3>
+                                <span class="auth-form__switch-btn">Đăng nhập</span>
+                            </div>
+                        
+
+                            <div class="auth-form__form">
+                                <div class="auth-form__group">
+                                    <input type="text" class="auth-form__input" placeholder="Email của bạn">
+                                    <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                                    <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu">
+                                </div>
+
+                                <div class="auth-form__aside">
+                                    <p class="auth-form__policy-text">Bằng việc đăng ký bạn đã đồng ý với Shopee về
+                                        <a href="" class="auth-form__text-link">Điều khoản dịch vụ</a> &
+                                        <a href="" class="auth-form__text-link">Chính sách bảo mật</a>
+                                    </p>
+                                </div>
+
+                                <div class="auth-form__controls">
+                                    <button class="btn">TRỞ LẠI</button>
+                                    <button class="btn btn--primary">ĐĂNG KÝ</button>
+                                </div>
+                            </div>
+
+                        </div>
+                            
+                        <div class="auth-form__socials">
+                            <a href="" class="btn btn--with-icon">
+                                <i class="fab fa-facebook-square"></i>
+                                Kết nối với facebook
+                            </a>
+
+                            <a href="" class="btn btn--with-icon">
+                                <i class="fab fa-google"></i>
+                                Kết nối với Google
+                            </a>
+
+                        </div>    
+                        
+                    </div>
+            </div>
 
         </div>
 
