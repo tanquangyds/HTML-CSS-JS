@@ -345,6 +345,8 @@
 }
 .auth-form__controls {
     margin-top: 80px;
+    display: flex;
+    justify-content: flex-end;
 
 }
 .auth-form__socials {
