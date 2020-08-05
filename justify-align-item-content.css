@@ -1,30 +1,11 @@
-.flexbox {
-    height: 500px;
-    width: 1000px;
-    background-color: #888;
+.box {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin: auto;
-}
-
-.box1 {
-    height: 100px;
-    width: 100px;
-    background-color: blue;
-
-}
-
-.box2 {
-    height: 200px;
-    width: 100px;
-    background-color: yellow;
-}
-
-.box3 {
-    height: 100px;
-    width: 200px;
-    background-color: green
-    ;
-}
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: grey;
+  }
+  
+  .box :first-child {
+      align-self: center;
+  }
+    
