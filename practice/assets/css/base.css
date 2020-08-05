@@ -2,7 +2,7 @@
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
-    --primary-color: #CB4F29;
+    --primary-color: #e0653f;
     --border-color: #dbdbdb;
 }
 
@@ -60,25 +60,50 @@ html {
 
 }
 .modal__body {
-    background-color: var(--white-color);
     margin: auto;
     position: relative;
     z-index: 1;
-    border-radius: 5px;
 
 }
 
 /* Button Style */
 .btn {
     min-width: 142px;
-    height: 36px;
+    height: 34px;
     border: none;
     border-radius: 3px;
     font-size: 1.5rem;
     padding: 0;
+    outline: none;
+    cursor: pointer;
+    color: var(--text-color);
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.6rem;
+}
+
+.btn.auth-form__control-back:hover {
+    background-color: rgba(0, 0, 0, 0.05);
 }
 
 .btn.btn--primary {
     background-color: var(--primary-color);
     color: var(--white-color);
+
 }
+
+.btn.btn--disable {
+    color: #666;
+    background-color: #888;
+    cursor: default;
+}
+
+.btn.btn--size-s {
+    height: 30px;
+    font-size: 1.2rem;
+    padding: 0 8px;
+}
+
+
