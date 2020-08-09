@@ -433,6 +433,12 @@
 .header__navbar-item-user {
     display: flex;
     align-items: center;
+    position: relative;
+}
+
+
+.header__navbar-item-user:hover .header__navbar-item-user-container {
+    display: block;
 }
 
 .header__navbar-item-user-avt {
@@ -447,6 +453,75 @@
     color: var(--white-color);
     padding-left: 8px;
 }
+
+.header__navbar-item-user-container {
+    position: absolute;
+    top: calc(100% + 4px);
+    z-index: 1;
+    right: 0;
+    width: 150px;
+    background-color: var(--white-color);
+    box-shadow: 0 1px 10px 0 rgba(0,0,0,0.2);    
+    border-radius: 2px;
+    display: none;    
+}
+
+.header__navbar-item-user-container::before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-width: 16px 20px;
+    border-style: solid;
+    border-color: transparent transparent var(--white-color) transparent;
+    top: -25px;
+    right: 3px;
+    cursor: pointer;
+}
+
+.header__navbar-item-user-container::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    top: -20px;
+    right: 0px;
+    cursor: pointer;
+}
+
+
+.header__navbar-item-user-list {    
+    list-style: none;    
+    padding: 0px;
+}
+
+.header__navbar-item-user-list-btn {
+    padding: 6px 0px 6px 15px;
+}
+
+.header__navbar-item-user-list-btn:hover {
+    background-color: #fafafa;
+}
+
+.header__navbar-item-user-list-btn:first-child {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+.header__navbar-item-user-list-btn:last-child {
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.header__navbar-item-user-list-btn a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 400;
+}
+
+
+
 
 
 /* Header with search */
