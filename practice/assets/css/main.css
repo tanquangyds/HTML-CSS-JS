@@ -13,6 +13,7 @@
     list-style: none;
     padding-left: 0px;
     margin: 4px 0px 0px 0px;
+    display: flex;
 }
 .header__navbar-item {
     margin: 0 8px;
@@ -426,6 +427,27 @@
 .auth-form__help-link-forgot {
     color: var(--primary-color);
 }
+
+/* User info */
+
+.header__navbar-item-user {
+    display: flex;
+    align-items: center;
+}
+
+.header__navbar-item-user-avt {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+
+.header__navbar-item-user-name {
+    font-size: 1.4rem;
+    font-weight: 200;
+    color: var(--white-color);
+    padding-left: 8px;
+}
+
 
 /* Header with search */
 
