@@ -520,6 +520,10 @@
     font-weight: 400;
 }
 
+.header__navbar-item-user:hover .header__navbar-item-user-name, .header__navbar-item-user-avt
+ {
+    color: rgba(255, 255, 255, 0.7)
+}
 
 
 
