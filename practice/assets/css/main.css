@@ -1000,7 +1000,7 @@
     color: var(--text-color);
     position: relative;
     padding: 6px 28px;
-    transform: right linear 0.1s;
+    transition: right linear 0.1s;
     right: 0;
 }
 
