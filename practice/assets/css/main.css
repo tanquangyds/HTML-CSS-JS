@@ -4,7 +4,7 @@
 }
 
 .header__navbar {
-    height: var(.header__navbar);
+    height: var(--nar-height);
     display: flex;
     justify-content: space-between;
 }
@@ -22,7 +22,6 @@
 }
 
 
-
 .header__navbar-item--QR:hover .header__QA-code {
     display: block;
 }
@@ -34,7 +33,7 @@
 .header__navbar-item,
 .header__navbar-item-link {
     display: inline-block;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     color: var(--white-color);
     text-decoration: none;
     font-weight: 200;
@@ -66,6 +65,10 @@
 .header__navbar-icon-link {
     color: var(--white-color);
     text-decoration: none;
+}
+
+.header__navbar-icon-link:nth-child(2) {
+    margin-left: 4px;   
 }
 .header__navbar-icon {
     font-size: 1.8rem;
@@ -163,7 +166,8 @@
     will-change: opacity, transform;
     transform-origin: calc(100% - 20px) top;
     z-index: 1;
-    border-radius: 2px;
+    border-radius: 3px;
+
 }
 
 @keyframes headerNotifyGrowth {
@@ -448,7 +452,7 @@
 }
 
 .header__navbar-item-user-name {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: 200;
     color: var(--white-color);
     padding-left: 8px;
@@ -518,6 +522,10 @@
     font-size: 1.4rem;
     color: var(--text-color);
     font-weight: 400;
+}
+
+.header__navbar-item-user-list-btn--separate {
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .header__navbar-item-user:hover .header__navbar-item-user-name, .header__navbar-item-user-avt
