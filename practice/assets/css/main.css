@@ -958,6 +958,7 @@
     color: var(--text-color);
     margin-bottom: 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    margin-top: 0px;
     /* display: flex;
     align-items: center; */
 }
