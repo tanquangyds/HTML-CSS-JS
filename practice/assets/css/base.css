@@ -142,3 +142,67 @@ html {
 }
 
 
+/* Select input */
+
+.select-input {
+    position: relative;
+    height: 34px;
+    border-radius: 3px;
+    background-color: var(--white-color);
+    min-width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12px;
+}
+
+.select-input:after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 7px;
+    width: 100%;
+    left: 0px;
+    top: 30px;
+}
+
+.select-input:hover .select-input__select {
+    display: block;
+}
+
+.select-input__title {
+    font-size: 1.4rem;
+    color: var(--text-color);
+}
+
+.select-input-icon {
+    font-size: 1.4rem;
+    color: var(--text-color);
+}
+
+.select-input__select {
+    position: absolute;
+    top: 27px;
+    width: 100%;
+    left: 0;
+    background-color: var(--white-color);
+    border-radius: 3px;
+    padding: 8px 12px;
+    display: none;
+}
+
+.select-input__item {
+    list-style: none;
+}
+
+.select-input__link {
+    text-decoration: none;
+    display: block;
+    color: var(--text-color);
+    font-size: 1.4rem;
+    padding: 4px 0px;
+}
+
+.select-input__link:hover {
+    color: var(--primary-color);
+}

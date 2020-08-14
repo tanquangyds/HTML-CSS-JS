@@ -286,29 +286,40 @@
                     <div class="grid__column-10">
                         <div class="home-filter">
                             <span class="home-filter-title">Sắp xếp theo</span>
-                            <button class="btn">Phổ biến</button>
-                            <button class="btn btn--primary">Mới nhất</button>
-                            <button class="btn">Bán chạy</button>
+                            <button class="home-filter-btn btn">Phổ biến</button>
+                            <button class="home-filter-btn btn btn--primary">Mới nhất</button>
+                            <button class="home-filter-btn btn">Bán chạy</button>
 
                             <div class="select-input">
                                 <span class="select-input__title">Giá</span>
-                                <i class="fas fa-chevron-down"></i>
+                                <i class="select-input-icon fas fa-chevron-down"></i>
+
+                                <ul class="select-input__select">
+                                    <li class="select-input__item">
+                                        <a class="select-input__link" href="#">Giá: từ cao đến thấp</a>
+                                    </li>
+
+                                    <li class="select-input__item">
+                                        <a class="select-input__link" href="#">Giá: từ thấp đến cao</a>
+                                    </li>
+                                </ul>
                             </div>
+
+
 
                             <div class="home-filter__page">
                                 <span class="home-filter__page-num">
-                                    <span class="home-filter__page-current">1</span>
-                                    /
-                                    14
+                                    <span class="home-filter__page-current">1</span>/14
                                 </span>
 
                                 <div class="home-filter__page-control">
-                                    <a href="#" class="home-filter__page-control-back">
-                                        <i class="fas fa-chevron-left"></i>
+                                    <!-- disable: home-filter__page-control-btn--disable-->
+                                    <a href="#" class="home-filter__page-control-btn home-filter__page-control-back home-filter__page-control-btn--disable">
+                                        <i class="home-filter__page-control-icon fas fa-chevron-left"></i>
                                     </a>
 
-                                    <a href="#" class="home-filter__page-control-next">
-                                        <i class="fas fa-chevron-right"></i>
+                                    <a href="#" class="home-filter__page-control-btn home-filter__page-control-next">
+                                        <i class="home-filter__page-control-icon fas fa-chevron-right"></i>
                                     </a>
                                 </div>
                             </div>
