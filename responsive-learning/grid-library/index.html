@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=., initial-scale=1.0">
+    <title>Document</title>
+    <!-- My library -->
+    <link rel="stylesheet" href="./grid.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .nav__list {
+            background-color: #666;
+            margin-top:  0px;
+        }
+
+        .course-item {
+            background-color:orange;
+            height: 320px;
+            text-align: center;
+            color: #fff;
+            font-size: 2em;
+            align-items: center;
+            line-height: 320px;
+        }
+        @media (max-width:1023px) {
+            .course-item {
+                margin-top: 20px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="grid wide container">
+        <div class="row">
+            <div class="col l-3 m-0 c-0">
+                <ul class="nav__list">
+                    <li>Javascript</li>
+                    <li>Html-css</li>
+                    <li>React JS</li>
+                </ul>
+            </div>
+            <div class="col l-9 m-12 c-12">
+                <div class="row">
+                    <div class="col l-4 m-6 c-12">
+                        <div class="course-item"> 
+                            HTML, CSS từ zero đến Hero
+                        </div>
+                    </div>
+                    <div class="col l-4 m-6 c-12">
+                        <div class="course-item">                             
+                            Thiết kế web responsive
+                        </div>
+                        </div>
+                    <div class="col l-4 m-6 c-12">
+                        <div class="course-item">
+                            Kiến thức cơ bản, tổng quan cho người mới bắt đầu
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
