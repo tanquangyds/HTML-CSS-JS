@@ -41,13 +41,74 @@ body {
     height: 28px;
     color: #fff;
     display: none;
+    margin-left: 12px;
 }
 
-@media only screen (max-width: 63.9375em) {
+.nav__overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+}
+
+.nav__mobile {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 250px;
+    max-width: 100%;
+    background-color:#fff;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform linear 0.2s, opacity linear 0.2s; 
+}
+
+.nav__mobile-close {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 10px;
+    right: 10px;
+
+}
+
+.nav__mobile-list {
+    list-style: none;
+}
+
+.nav__mobile-link {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.3rem;
+    display: block;
+    padding: 20px 0px;
+}
+
+#nav__input:checked ~ .nav__overlay {
+    display: block;
+    animation: fadeIn linear .2s;
+}
+
+#nav__input:checked ~ .nav__mobile {
+   transform: translateX(0%);
+   opacity: 1;
+}
+
+@keyframes fadeIn { 
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+
+@media (max-width: 1023px) {
     .nav__mobile-btn {
         display: block;
     }
-    .nav__pc {display: none;}
+    .nav__pc {display: none;}    
 }
 
 
