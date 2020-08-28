@@ -120,6 +120,30 @@
                 </nav>
                 <!-- header with search --> 
                 <div class="header-with-search">
+                    <div class="header-mobile-left">
+                        <div class="header-nav-mobile">
+                            <label for="nav__checkbox" class="nav__user-icon">
+                                <i class="nav__user-icon-svg fas fa-bars"></i>
+                            </label>
+                            <input type="checkbox"id="nav__checkbox" hidden>
+                            <label for="nav__checkbox" class="nav_user-overlay"></label>
+                            <ul class="nav__user-list">
+                                <li class="nav__user-list-item">
+                                    <a href="#" class="nav__user-list-item-link">Tài khoản của tôi</a>
+                                </li>
+                                <li class="nav__user-list-item">
+                                    <a href="#" class="nav__user-list-item-link">Đơn mua</a>
+                                </li>
+                                <li class="nav__user-list-item">
+                                    <a href="#" class="nav__user-list-item-link">Đăng xuất</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header-search-mobile">
+                            <i class="header-search-mobile-icon fas fa-search"></i>
+                            
+                        </div>
+                    </div>
                     <div class="header-with-search__logo hide-on-tablet">
                         <a href="index.html" class="header-with-search__logo-link">
                             <svg class="header-with-search__logo-img" viewBox="0 0 192 65">
@@ -129,7 +153,7 @@
                              </svg>
                         </a>
                     </div>
-                    <div class="header-with-search__search">
+                    <div class="header-with-search__search hide-on-mobile">
                         <div class="header__search-input-wrap">
                             <input type="text" class="header-with-search__search-input" placeholder="Nhập tìm kiếm sản phẩm">
                             <!-- Search history -->

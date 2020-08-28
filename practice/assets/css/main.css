@@ -539,6 +539,88 @@
 
 
 /* Header with search */
+.header-mobile-left {
+    justify-content: space-between;
+    align-items: center;
+    display: none;
+
+}
+
+
+
+.nav__user-icon-svg {
+    color: #fff;
+    font-size: 2.2rem;
+    padding: 0 12px;
+}
+
+.nav_user-overlay {
+    position: fixed;
+    top: var(--header-height);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    animation: fadeIn linear .2s;
+    display: none;
+    z-index: 9;
+}
+
+#nav__checkbox:checked ~ .nav_user-overlay {
+    display: block;
+}
+
+#nav__checkbox:checked ~ .nav__user-list {
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+.nav__user-list {
+    position: fixed;
+    left: 0;
+    top: var(--header-height);
+    bottom: 0;
+    background-color: var(--white-color);
+    width: 40%;
+    z-index: 2;
+    padding: 5px 12px;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: transform ease-in 0.2s, opacity ease-in 0.2s;
+    z-index: 10;
+
+}
+
+.nav__user-list-item {
+    border-bottom: 1px solid var(--border-color);
+}
+
+
+.nav__user-list-item-link {
+    display: block;
+    font-size: 1.6rem;
+    height: 100%;
+    padding: 20px 0px;
+    color: var(--text-color);
+    
+}
+
+.header-search-mobile-icon {
+    color: #fff;
+    font-size: 2.2rem;
+    font-weight: 400;
+    margin-right: auto;
+}
 
 .header-with-search {
     height: var(--search-height);
@@ -546,13 +628,11 @@
     align-items: center;
 }
 
-.header-with-search__logo {
-    width: 200px;
-}
-
 .header-with-search__logo-link {
     text-decoration: none;
     border: transparent;
+    width: 200px;
+    display: block;
 }
 
 .header-with-search__logo-img {
@@ -654,10 +734,10 @@
 .header-with-search__cart-notice {
     position: absolute;
     top: 1px;
-    right: -7px;
-    font-size: 1.4rem;
+    right: 2px;
+    font-size: 1.2rem;
     line-height: 1.4rem;
-    padding: 1px 10px;
+    padding: 1px 7px;
     border-radius: 10px;
     border: 2px solid var(--primary-color);
     color: var(--primary-color);

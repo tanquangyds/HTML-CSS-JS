@@ -4,7 +4,7 @@
         display: none;
     }
     :root {
-        --header-height: 70px;
+        --header-height: 60px;
         --nar-height: 0px;
     }
 
@@ -49,5 +49,26 @@
 @media (max-width: 739px) {
     .hide-on-mobile {
         display: none;
+    }
+    .header-with-search {
+        justify-content: space-between;
+    }
+
+    .header-mobile-left {
+        display: flex;
+    }
+
+    .header-with-search__cart {
+        width: unset;
+    }
+    .header-with-search__logo-img {
+        width: unset;
+        padding-left: unset;
+        height: 50px;
+    }
+    .header-with-search__logo-link {
+        display: block;
+        line-height: 0;
+        width: unset;
     }
 }
