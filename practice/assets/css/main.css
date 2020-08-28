@@ -543,6 +543,7 @@
     justify-content: space-between;
     align-items: center;
     display: none;
+    width: 70px;
 
 }
 
@@ -551,7 +552,7 @@
 .nav__user-icon-svg {
     color: #fff;
     font-size: 2.2rem;
-    padding: 0 12px;
+    padding-left: 12px;
 }
 
 .nav_user-overlay {
