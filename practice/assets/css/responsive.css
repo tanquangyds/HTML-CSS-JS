@@ -71,4 +71,23 @@
         line-height: 0;
         width: unset;
     }
+    .header-with-search__search {
+        position: fixed;
+        top: var(--header-height);
+        left: 0;
+        right: 0;
+        z-index: 10;
+        padding: 0px 8px;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+        visibility: hidden; 
+    }
+    .header__search-history {
+        position: fixed;
+        top: calc(var(--header-height) + var(--search-height));
+        left: 0;
+        width: 100%;
+        padding: 0px 8px;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+        z-index: 10;
+    }
 }
