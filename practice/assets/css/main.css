@@ -956,6 +956,49 @@
     display: block;
 }
 
+/* Short Nav */
+
+.nav__shortNav-list {
+    display: none;
+    position: fixed;
+    top: calc(var(--header-height));
+    left: 0;
+    right: 0;
+    height: var(--shortNav-height);
+    background-color: #fff;
+}
+
+.nav__shortNav-list-item {
+    position: relative;
+    flex: 1;
+}
+
+.nav__shortNav-list-item:first-child:before {
+    display: none;
+}   
+
+
+.nav__link {
+   display: block;
+   width: 100%;
+   text-align: center;
+   line-height: var(--shortNav-height);
+   font-size: 1.2rem;
+   color: var(--text-color);
+   border-top: 1px solid var(--border-color);
+   border-bottom: 1px solid var(--border-color);
+}
+
+.nav__shortNav-list-item:before {    
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 60%;
+    top: 50%;
+    transform: translateY(-50%);
+    border-left: 1px solid var(--border-color);
+}
+
 /* App container */
 
 .app__container {
