@@ -34,6 +34,9 @@
     .app__container {
         padding-top: 10px;
     }
+    .nav-mobile-category {
+        display: block;
+    }
 }
 
 
