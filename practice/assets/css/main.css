@@ -617,26 +617,21 @@
     
 }
 
+.header-search-mobile {
+    position: relative;
+}
+
 .header-search-mobile-icon {
     color: #fff;
     font-size: 2.2rem;
     font-weight: 400;
     margin-right: auto;
 }
-#search__checkbox:checked ~ .header-with-search__search-mobile {
+#search__checkbox:checked ~ .header-with-search__search {
     display: flex;
     transform: translateY(0%);
     opacity: 1;
     visibility: visible;
-}
-
-.header-with-search__search-mobile {
-    flex: 1;
-    height: var(--search-height-mobile);
-    background-color: var(--white-color);
-    border-radius: 2px;
-    align-items: center;
-    display: none;
 }
 
 .header-with-search {
