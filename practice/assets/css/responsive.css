@@ -5,7 +5,7 @@
     }
     :root {
         --header-height: 60px;
-        --nar-height: 0px;
+        --nav-height: 0px;
     }
 
     .header {
@@ -71,23 +71,27 @@
         line-height: 0;
         width: unset;
     }
-    .header-with-search__search {
+    .header-with-search__search--mobile {
         position: fixed;
-        top: var(--header-height);
+        top: 100px;
         left: 0;
         right: 0;
-        z-index: 10;
+        z-index: 9;
         padding: 0px 8px;
-        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
-        visibility: hidden; 
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+        /* transform: translateY(0%); */
+        /* opacity: 0; */
+        /* visibility: hidden; */
+        /* transition: transform linear 0.5s, opacity linear 0.5s; */
     }
     .header__search-history {
         position: fixed;
-        top: calc(var(--header-height) + var(--search-height));
+        /* top: calc(var(--header-height) + var(--search-height-mobile)); */
+        top: var(--search-height-mobile);
         left: 0;
         width: 100%;
         padding: 0px 8px;
-        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
         z-index: 10;
     }
 }

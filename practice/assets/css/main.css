@@ -4,7 +4,7 @@
 }
 
 .header__navbar {
-    height: var(--nar-height);
+    height: var(--nav-height);
     display: flex;
     justify-content: space-between;
 }
@@ -623,6 +623,21 @@
     font-weight: 400;
     margin-right: auto;
 }
+#search__checkbox:checked ~ .header-with-search__search-mobile {
+    display: flex;
+    transform: translateY(0%);
+    opacity: 1;
+    visibility: visible;
+}
+
+.header-with-search__search-mobile {
+    flex: 1;
+    height: var(--search-height-mobile);
+    background-color: var(--white-color);
+    border-radius: 2px;
+    align-items: center;
+    display: none;
+}
 
 .header-with-search {
     height: var(--search-height);
@@ -644,7 +659,7 @@
 
 .header-with-search__search {
     flex: 1;
-    height: var(--search-height);
+    height: var(--search-height-mobile);
     background-color: var(--white-color);
     border-radius: 2px;
     display: flex;
@@ -1048,6 +1063,7 @@
     right: 0;
     height: var(--shortNav-height);
     background-color: #fff;
+    z-index: 8;
 }
 
 .nav__shortNav-list-item {
