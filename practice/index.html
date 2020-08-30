@@ -144,6 +144,7 @@
                                 <i class="header-search-mobile-icon fas fa-search"></i>
                             </label>         
                             
+
                         </div>
                     </div>
                     <div class="header-with-search__logo hide-on-tablet">
@@ -155,8 +156,8 @@
                              </svg>
                         </a>
                     </div>
-                    <input type="checkbox" id="search__checkbox" hidden>
-                    <div class="header-with-search__search">
+                    
+                    <div class="header-with-search__search hide-on-mobile">
                         <div class="header__search-input-wrap">
                             <input type="text" class="header-with-search__search-input" placeholder="Nhập tìm kiếm sản phẩm">
                             <!-- Search history -->
@@ -338,28 +339,67 @@
                         
                     </div>
                 </div>
-                <ul class="nav__shortNav-list">
-                    <!-- active: nav__shortNav--active -->
-                    <li class="nav__shortNav-list-item">
-                        <a href="#" class="nav__link">Liên quan</a>
-                    </li>
-                    <li class="nav__shortNav-list-item nav__shortNav--active">
-                        <a href="#" class="nav__link">Mới nhất</a>
-                    </li>
-                    <li class="nav__shortNav-list-item">
-                        <a href="#" class="nav__link">Bán chạy</a>
-                    </li>
-                    <li class="nav__shortNav-list-item">
-                        <a href="#" class="nav__link">Giá</a>
-                    </li>
-                </ul>
             </div>
         </header>  
 
-
-
+        <div class="header__mobile show-on-mobile-tablet">
+            <div class="search__mobile-responsive hide-on-tablet">
+                <input type="checkbox" id="search__checkbox" hidden>                            
+                <div class="search--mobile">
+                    <div class="header__search-input-wrap">
+                        <input type="text" class="header-with-search__search-input" placeholder="Nhập tìm kiếm sản phẩm">
+                        <!-- Search history -->
+                        <div class="header__search-history">
+                            <h3 class="header__header">Lịch sử tìm kiếm</h3>
+                            <ul class="header__search-history-list">
+                                <li class="header__search-history-list-item">
+                                    <a href="">Kem dưỡng ẩm</a>
+                                </li>
+                                <li class="header__search-history-list-item">
+                                    <a href="">Kem trị mụn</a>
+                                </li>
+                            </ul>   
+                        </div>                            
+                    </div>              
+    
+                    <div class="header__search-selection">
+                        <span class="header__search-selection-label">Trong shop</span>
+                        <i class="header__search-selection-icon fas fa-chevron-down"></i>
+                        <!-- Options -->
+                        <ul class="header__search-options">
+                            <li class="header__search-option-items header__search-option-items--active">
+                                <span>Trong shop</span>
+                                <i class="test fas fa-check"></i>
+                            </li>
+                            <li class="header__search-option-items">
+                                <span>Ngoài shop</span>
+                                <i class="test fas fa-check"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="header__search-btn">
+                        <i class="header__search-btn-icon fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+            <ul class="nav__shortNav-list">
+                <!-- active: nav__shortNav--active -->
+                <li class="nav__shortNav-list-item">
+                    <a href="#" class="nav__link">Liên quan</a>
+                </li>
+                <li class="nav__shortNav-list-item nav__shortNav--active">
+                    <a href="#" class="nav__link">Mới nhất</a>
+                </li>
+                <li class="nav__shortNav-list-item">
+                    <a href="#" class="nav__link">Bán chạy</a>
+                </li>
+                <li class="nav__shortNav-list-item">
+                    <a href="#" class="nav__link">Giá</a>
+                </li>
+            </ul>
+        </div>
         <div class="app__container">
-            <div class="grid wide">
+            <div class="grid wide">                
                 <div class="row sm-gutter">
                     <div class="col l-2 m-0 c-0">
                         <nav class="category">
